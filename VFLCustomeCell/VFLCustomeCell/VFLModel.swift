@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct VFLModel {
+    let team: String
+    let league: String
+    let division: String
+    let color: Int
+}
