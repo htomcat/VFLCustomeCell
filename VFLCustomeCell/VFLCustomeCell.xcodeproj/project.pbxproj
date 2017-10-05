@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F3D7F91C1F84CBEB00E1E69B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F91B1F84CBEB00E1E69B /* AppDelegate.swift */; };
-		F3D7F91E1F84CBEB00E1E69B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F91D1F84CBEB00E1E69B /* ViewController.swift */; };
-		F3D7F9211F84CBEB00E1E69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D7F91F1F84CBEB00E1E69B /* Main.storyboard */; };
 		F3D7F9231F84CBEB00E1E69B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D7F9221F84CBEB00E1E69B /* Assets.xcassets */; };
 		F3D7F9261F84CBEB00E1E69B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D7F9241F84CBEB00E1E69B /* LaunchScreen.storyboard */; };
 		F3D7F9311F84CBEB00E1E69B /* VFLCustomeCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F9301F84CBEB00E1E69B /* VFLCustomeCellTests.swift */; };
 		F3D7F93C1F84CBEB00E1E69B /* VFLCustomeCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F93B1F84CBEB00E1E69B /* VFLCustomeCellUITests.swift */; };
+		F3D7F94A1F84CDAD00E1E69B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F9491F84CDAD00E1E69B /* TableViewController.swift */; };
+		F3D7F94C1F84DA8300E1E69B /* VFLCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F94B1F84DA8300E1E69B /* VFLCustomTableViewCell.swift */; };
+		F3D7F94E1F84DCC000E1E69B /* VFLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F94D1F84DCC000E1E69B /* VFLModel.swift */; };
+		F3D7F9501F84E0E200E1E69B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7F94F1F84E0E200E1E69B /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,6 @@
 /* Begin PBXFileReference section */
 		F3D7F9181F84CBEB00E1E69B /* VFLCustomeCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VFLCustomeCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D7F91B1F84CBEB00E1E69B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3D7F91D1F84CBEB00E1E69B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3D7F9201F84CBEB00E1E69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3D7F9221F84CBEB00E1E69B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D7F9251F84CBEB00E1E69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3D7F9271F84CBEB00E1E69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,10 @@
 		F3D7F9371F84CBEB00E1E69B /* VFLCustomeCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VFLCustomeCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D7F93B1F84CBEB00E1E69B /* VFLCustomeCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFLCustomeCellUITests.swift; sourceTree = "<group>"; };
 		F3D7F93D1F84CBEB00E1E69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D7F9491F84CDAD00E1E69B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F3D7F94B1F84DA8300E1E69B /* VFLCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFLCustomTableViewCell.swift; sourceTree = "<group>"; };
+		F3D7F94D1F84DCC000E1E69B /* VFLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VFLModel.swift; sourceTree = "<group>"; };
+		F3D7F94F1F84E0E200E1E69B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				F3D7F91B1F84CBEB00E1E69B /* AppDelegate.swift */,
-				F3D7F91D1F84CBEB00E1E69B /* ViewController.swift */,
-				F3D7F91F1F84CBEB00E1E69B /* Main.storyboard */,
 				F3D7F9221F84CBEB00E1E69B /* Assets.xcassets */,
 				F3D7F9241F84CBEB00E1E69B /* LaunchScreen.storyboard */,
 				F3D7F9271F84CBEB00E1E69B /* Info.plist */,
+				F3D7F9491F84CDAD00E1E69B /* TableViewController.swift */,
+				F3D7F94B1F84DA8300E1E69B /* VFLCustomTableViewCell.swift */,
+				F3D7F94D1F84DCC000E1E69B /* VFLModel.swift */,
+				F3D7F94F1F84E0E200E1E69B /* UIColorExtension.swift */,
 			);
 			path = VFLCustomeCell;
 			sourceTree = "<group>";
@@ -234,7 +240,6 @@
 			files = (
 				F3D7F9261F84CBEB00E1E69B /* LaunchScreen.storyboard in Resources */,
 				F3D7F9231F84CBEB00E1E69B /* Assets.xcassets in Resources */,
-				F3D7F9211F84CBEB00E1E69B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D7F91E1F84CBEB00E1E69B /* ViewController.swift in Sources */,
+				F3D7F94A1F84CDAD00E1E69B /* TableViewController.swift in Sources */,
 				F3D7F91C1F84CBEB00E1E69B /* AppDelegate.swift in Sources */,
+				F3D7F9501F84E0E200E1E69B /* UIColorExtension.swift in Sources */,
+				F3D7F94E1F84DCC000E1E69B /* VFLModel.swift in Sources */,
+				F3D7F94C1F84DA8300E1E69B /* VFLCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F3D7F91F1F84CBEB00E1E69B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3D7F9201F84CBEB00E1E69B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3D7F9241F84CBEB00E1E69B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
