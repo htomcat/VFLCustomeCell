@@ -12,3 +12,9 @@ VFL is an abbreviation of "Visial Format Language".
 We can define constraints with a single line code.
 VFL is made of ASCII-art formatted string.
 The string construct either horizontal or vertical constraint.
+
+## Why use VFL instead of XIB
+Xib is suited to simple constraints.
+Otherwise it is not suited to complicated constraints.
+For exmaple specific constraints change depend on situation
+If you use VFL, you can define constraints easily.
